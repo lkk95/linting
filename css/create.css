@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary: #c5d0c1;
+  --secondary: #9eadab;
+  --accent: #dea190;
+  --base: #f8ecde;
+}
+}
+
+.body {
+  background-color: var(--base);
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1em;
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin: 3em;
+}
+
+.createform {
+  justify-self: center;
+  grid-row: 2/ 3;
+  display: flex;
+  width: 40em;
+  height: 45em;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  border: 1px var(--secondary) solid;
+  padding: 2em;
+}
+
+fieldset {
+  border: 0px solid var(--base);
+  display: flex;
+  flex-direction: column;
+  gap: 1.15em;
+  text-align: center;
+}
+
+textarea {
+  height: 7em;
+  width: 25em;
+  border: var(--secondary) solid 1px;
+  border-radius: 1em;
+}
+
+input {
+  height: 4em;
+  width: 25em;
+  border: var(--secondary) solid 1px;
+  border-radius: 1em;
+}
+
+input[placeholder] {
+  padding: 1em;
+  text-align: center;
+}
+
+.submitbtn {
+  width: 10em;
+  height: 3em;
+  padding: 0.5em;
+  background-color: var(--accent);
+  border: 0px var(--accent) solid;
+  border-radius: 0.5em;
+  font-size: 1rem;
+}
+
+.navbar {
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+}
