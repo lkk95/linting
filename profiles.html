@@ -4,42 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/profiles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Profile</title>
   </head>
   <body>
-    <head>
-      <h1>Profile</h1>
-    </head>
+    <header>
+      <h1>PROFILE</h1>
+    </header>
     <main>
-      <section>
-        <img src="" alt="" />
-        <h2>Your Name</h2>
+      <section class="intro">
+        <img
+          class="intro_img"
+          src="images/profile_portrait.jpg"
+          alt="Woman with brown hair"
+          width="240px"
+          height="240px"
+        />
+        <h2 class="intro_name">Your Name</h2>
       </section>
-      <section>
+      <section class="description">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
           facilis illo. Officiis eligendi optio ab, impedit debitis porro
           itaque, quam sed sunt, cum nihil a cupiditate quisquam eaque vel
           voluptatibus.
         </p>
-        <h2>My Skills</h2>
-        <div class="tags">
-          <p>desert</p>
-          <p>nature</p>
-          <p>geography</p>
-          <p>earth</p>
+        <h2 class="description_heading">My Skills</h2>
+        <div class="description_tags">
+          <a href="" class="description_tag">desert</a>
+          <a href="" class="description_tag">nature</a>
+          <a href="" class="description_tag">geography</a>
+          <a href="" class="description_tag">earth</a>
         </div>
       </section>
-      <section>
-        <button>LOGOUT</button>
-      </section>
+      <button class="logoutbtn">LOGOUT</button>
     </main>
     <footer>
-      <nav>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
+      <nav class="navbar">
+        <a href="index.html" class="navbar_item"
+          ><img src="images/home_FILL0_wght400_GRAD0_opsz48.svg" alt="house"
+        /></a>
+        <a href="bookmarks.html" class="navbar_item"
+          ><img
+            src="images/bookmark_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="bookmark"
+        /></a>
+
+        <a href="create.html" class="navbar_item"
+          ><img
+            src="images/edit_note_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="pen and text"
+        /></a>
+
+        <a href="profiles.html" class="navbar_item"
+          ><img
+            src="images/account_circle_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="person in circle"
+        /></a>
       </nav>
     </footer>
   </body>

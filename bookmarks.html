@@ -4,42 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bookmarks.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Bookmarks</title>
   </head>
   <body>
-    <head>
-      <h1>QUIZ-APP</h1>
-    </head>
+    <header>
+      <h1>BOOKMARKS</h1>
+    </header>
     <main>
-      <section class="card">
-        <h2>QUESTION</h2>
-        <p>Which desert is the biggest in the world?</p>
-        <button>Show Answer</button>
-        <div class="tags">
-          <p>desert</p>
-          <p>nature</p>
-          <p>geography</p>
-          <p>earth</p>
+      <section class="card card--selceted">
+        <img
+          class="card_bookmark"
+          src="images/bookmarks_black_24dp (1).svg"
+          width="48px"
+          height="48px"
+          alt="bookmark"
+        />
+        <h2 class="card_heading">QUESTION</h2>
+        <p class="card_text">Which desert is the biggest in the world?</p>
+        <button class="card_button">Show Answer</button>
+        <div class="card_tags">
+          <a href="" class="card_tag">desert</a>
+          <a href="" class="card_tag">nature</a>
+          <a href="" class="card_tag">geography</a>
+          <a href="" class="card_tag">earth</a>
         </div>
       </section>
       <section class="card">
-        <h2>QUESTION</h2>
-        <p>Who is Germanys current minister of foreign affairs?</p>
-        <button>Show Answer</button>
-        <div class="tags">
-          <p>politics</p>
-          <p>germany</p>
-          <p>german government</p>
-          <p>political positions</p>
+        <img
+          class="card_bookmark"
+          src="images/bookmarks_black_24dp.svg"
+          width="48px"
+          height="48px"
+          alt="bookmark"
+        />
+        <h2 class="card_heading">QUESTION</h2>
+        <p class="card_text">
+          Which band published the song "Smoke on the Water" in 1971?
+        </p>
+        <button class="card_button">Show Answer</button>
+        <div class="card_tags">
+          <a href="" class="card_tag">desert</a>
+          <a href="" class="card_tag">nature</a>
+          <a href="" class="card_tag">geography</a>
+          <a href="" class="card_tag">earth</a>
         </div>
       </section>
     </main>
     <footer>
-      <nav>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
+      <nav class="navbar">
+        <a href="index.html" class="navbar_item"
+          ><img src="images/home_FILL0_wght400_GRAD0_opsz48.svg" alt="house"
+        /></a>
+        <a href="bookmarks.html" class="navbar_item"
+          ><img
+            src="images/bookmark_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="bookmark"
+        /></a>
+
+        <a href="create.html" class="navbar_item"
+          ><img
+            src="images/edit_note_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="pen and text"
+        /></a>
+
+        <a href="profiles.html" class="navbar_item"
+          ><img
+            src="images/account_circle_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="person in circle"
+        /></a>
       </nav>
     </footer>
   </body>

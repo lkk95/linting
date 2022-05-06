@@ -1,0 +1,120 @@
+/* Color Theme Swatches in Hex 
+.color-theme_FFDFF373-073D-4826-8B17-2C12E741FFCC-1-hex { color: #c5d0c1; }
+.color-theme_FFDFF373-073D-4826-8B17-2C12E741FFCC-2-hex { color: #9eadab; }
+.color-theme_FFDFF373-073D-4826-8B17-2C12E741FFCC-3-hex { color: #F8ECDE; }
+.color-theme_FFDFF373-073D-4826-8B17-2C12E741FFCC-4-hex { color: #E8866C; }
+.color-theme_FFDFF373-073D-4826-8B17-2C12E741FFCC-5-hex { color: #494546; }
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary: #c5d0c1;
+  --secondary: #9eadab;
+  --accent: #dea190;
+  --base: #f8ecde;
+}
+
+.body {
+  background-color: var(--base);
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1em;
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.5em;
+  margin: 3em;
+}
+
+.card {
+  justify-self: center;
+  width: 35em;
+  height: 18em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--secondary);
+  border: 0px var(--secondary) solid;
+  border-radius: 1em;
+  position: relative;
+}
+
+.card:hover {
+  width: 35.5em;
+  height: 18.5em;
+}
+
+.card_bookmark {
+  position: absolute;
+  right: 15px;
+  top: -20px;
+}
+
+.card_heading {
+  font-size: 1rem;
+}
+
+.card_text {
+  font-size: 1.25em;
+  padding: 0;
+  margin-bottom: 1.25em;
+}
+
+.card_tags {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.card_button {
+  width: 8em;
+  height: 3em;
+  padding: 0.5em;
+  background-color: var(--accent);
+  border: 0px var(--accent) solid;
+  border-radius: 0.5em;
+  font-size: 1rem;
+}
+
+.card_tag {
+  background-color: #d7e5d2;
+  border: 0px #d7e5d2 solid;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+}

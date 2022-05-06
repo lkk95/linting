@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary: #c5d0c1;
+  --secondary: #9eadab;
+  --accent: #dea190;
+  --base: #f8ecde;
+}
+}
+
+.body {
+  background-color: var(--base);
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1em;
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Luckiest Guy", cursive;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5em;
+  margin: 3em;
+}
+
+.intro {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 6em;
+  width: 500px;
+  height: 270px;
+}
+
+.intro_img {
+  border-radius: 50%;
+}
+
+.description {
+  justify-self: center;
+  width: 500px;
+  height: 270px;
+  text-align: center;
+}
+
+.description_heading {
+  margin-top: 2em;
+}
+
+.description_tags {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.description_tag {
+  background-color: #d7e5d2;
+  border: 0px #d7e5d2 solid;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  text-decoration: none;
+  color: black;
+}
+
+.logoutbtn {
+  justify-self: center;
+  grid-column: 1/ 2;
+  grid-row: 3 / auto;
+  width: 10em;
+  height: 3em;
+  padding: 0.5em;
+  background-color: var(--accent);
+  border: 0px var(--accent) solid;
+  border-radius: 0.5em;
+  font-size: 1rem;
+}
+
+.navbar {
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+}
