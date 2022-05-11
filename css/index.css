@@ -8,7 +8,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -29,7 +29,7 @@ header {
 
 header h1 {
   text-align: center;
-  font-family: "Luckiest Guy", cursive;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 main {

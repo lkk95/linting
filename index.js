@@ -1,20 +1,20 @@
 //Change color of bookmark
-const bookmark = document.querySelector(".bookmark");
+const bookmark = document.querySelector('.bookmark');
 
-bookmark.addEventListener("click", () => {
-  bookmark.classList.toggle("filled");
+bookmark.addEventListener('click', () => {
+  bookmark.classList.toggle('filled');
 });
 
 //Show answer
-const button = document.querySelector(".card_button");
-const answer = document.querySelector(".hidden");
+const button = document.querySelector('.card_button');
+const answer = document.querySelector('.hidden');
 
-button.addEventListener("click", () => {
-  if (button.textContent === "Show Answer") {
-    button.textContent = "Hide Answer";
+button.addEventListener('click', () => {
+  if (button.textContent === 'Show Answer') {
+    button.textContent = 'Hide Answer';
   } else {
-    button.textContent = "Show Answer";
+    button.textContent = 'Show Answer';
   }
-  answer.classList.toggle("hidden");
+  answer.classList.toggle('hidden');
   //this works but not chnages back afterwards
 });
