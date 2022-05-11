@@ -61,10 +61,14 @@ main {
   height: 18.5em;
 }
 
-.card_bookmark {
+.bookmark {
   position: absolute;
   right: 15px;
   top: -20px;
+}
+
+.stroke {
+  fill: var(--accent);
 }
 
 .card_heading {
@@ -92,6 +96,10 @@ main {
   border: 0px var(--accent) solid;
   border-radius: 0.5em;
   font-size: 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .card_tag {
