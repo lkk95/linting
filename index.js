@@ -1,20 +1,12 @@
-//Change color of bookmark
-const bookmark = document.querySelector(".bookmark");
+import { toggleAnswer } from "./javascript/toggleAnswer.js";
+import { bookmarkFunction } from "./javascript/bookmarkFunction.js";
 
-bookmark.addEventListener("click", () => {
-  bookmark.classList.toggle("filled");
-});
+//Change color of bookmark
+const bookmarks = document.querySelectorAll('[data-js="bookmark"]');
+
+bookmarks.forEach(bookmarkFunction);
 
 //Show answer
-const button = document.querySelector(".card_button");
-const answer = document.querySelector(".hidden");
+const buttons = document.querySelectorAll('[data-js="button"]');
 
-button.addEventListener("click", () => {
-  if (button.textContent === "Show Answer") {
-    button.textContent = "Hide Answer";
-  } else {
-    button.textContent = "Show Answer";
-  }
-  answer.classList.toggle("hidden");
-  //this works but not chnages back afterwards
-});
+buttons.forEach(toggleAnswer);

@@ -9,7 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="index.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="module" src="index.js" defer></script>
     <title>Home</title>
   </head>
   <body>
@@ -18,20 +22,13 @@
     </header>
     <main>
       <section class="card card--selceted">
-        <svg
-          class="bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          height="48"
-          width="48"
-        >
-          <path
-            d="M13 37.45 24 32.8 35 37.45V8.75Q35 8.75 35 8.75Q35 8.75 35 8.75H13Q13 8.75 13 8.75Q13 8.75 13 8.75ZM10 42V8.75Q10 7.55 10.9 6.65Q11.8 5.75 13 5.75H35Q36.2 5.75 37.1 6.65Q38 7.55 38 8.75V42L24 36ZM35 8.75H24H13Q13 8.75 13 8.75Q13 8.75 13 8.75H35Q35 8.75 35 8.75Q35 8.75 35 8.75Z"
-          />
-        </svg>
+        <span data-js="bookmark" class="material-icons md-48 bookmark">
+          bookmark
+        </span>
         <h2 class="card_heading">QUESTION</h2>
         <p class="card_text">Which desert is the biggest in the world?</p>
-        <button class="card_button">Show Answer</button>
-        <p class="hidden">
+        <button class="card_button" data-js="button">Show Answer</button>
+        <p class="hidden" data-js="answer">
           Actually the biggest desert in the world is the Antarctic.
         </p>
         <div class="card_tags">
@@ -43,6 +40,7 @@
       </section>
       <section class="card">
         <svg
+          data-js="bookmark"
           class="bookmark"
           xmlns="http://www.w3.org/2000/svg"
           height="48"
@@ -54,7 +52,10 @@
         </svg>
         <h2 class="card_heading">QUESTION</h2>
         <p class="card_text">When did the French Revolution start?</p>
-        <button class="card_button">Show Answer</button>
+        <button class="card_button" data-js="button">Show Answer</button>
+        <p class="hidden" data-js="answer">
+          The French Revolution started in 1789.
+        </p>
         <div class="card_tags">
           <a href="" class="card_tag">history</a>
           <a href="" class="card_tag">french revolution</a>
@@ -64,6 +65,7 @@
       </section>
       <section class="card">
         <svg
+          data-js="bookmark"
           class="bookmark"
           xmlns="http://www.w3.org/2000/svg"
           height="48"
@@ -77,7 +79,8 @@
         <p class="card_text">
           Who is Germanys current minister of foreign affairs?
         </p>
-        <button class="card_button">Show Answer</button>
+        <button class="card_button" data-js="button">Show Answer</button>
+        <p class="hidden" data-js="answer">Annalena Baerbock</p>
         <div class="card_tags">
           <a href="" class="card_tag">politics</a>
           <a href="" class="card_tag">germany</a>
@@ -87,6 +90,7 @@
       </section>
       <section class="card">
         <svg
+          data-js="bookmark"
           class="bookmark"
           xmlns="http://www.w3.org/2000/svg"
           height="48"
@@ -100,7 +104,8 @@
         <p class="card_text">
           Which band published the song "Smoke on the Water" in 1971?
         </p>
-        <button class="card_button">Show Answer</button>
+        <button class="card_button" data-js="button">Show Answer</button>
+        <p class="hidden" data-js="answer">Pink Floyd</p>
         <div class="card_tags">
           <a href="" class="card_tag">desert</a>
           <a href="" class="card_tag">nature</a>

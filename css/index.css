@@ -68,7 +68,11 @@ main {
 }
 
 .stroke {
-  fill: var(--accent);
+  color: var(--accent);
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
 }
 
 .card_heading {
